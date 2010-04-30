@@ -1,0 +1,34 @@
+[user]
+  name = Phil Oye
+  email = philoye@philoye.com
+[core]
+  pager = less -FRSX
+  whitespace = fix
+[diff]
+  renamelimit = 0
+  tool = changes
+[difftool "changes"]
+  cmd = /usr/bin/env chdiff --wait "$LOCAL" "$REMOTE"
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+[pack]
+	threads = 0
+[branch]
+  autosetupmerge = true
+[gui]
+	recentrepo = /Users/philoye/Sites/oyemodern
+[push]
+	default = matching
+[merge]
+  log = true
+[alias]
+  co = checkout
+  st = status
+  br = branch -a
+  ci = commit
+  l = log --graph --date=rfc --decorate --pretty=format:' %Cgreencommit: %H%d%n by %an <%ae>, %ad (%ar)%n%n\"%s\"%n%n'
