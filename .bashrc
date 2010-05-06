@@ -25,6 +25,7 @@ alias ra="touch tmp/restart.txt"
 alias gx="gitx --all"
 alias serve="python -m SimpleHTTPServer"
 alias gs="git st"
+alias pg="pg_ctl -D /usr/local/var/postgres"
 
 # My hack of Lachlan's hacked together prompt from:
 # http://blogs.atlassian.com/developer/2009/03/gitting-dirty.html
