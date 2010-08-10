@@ -1,4 +1,4 @@
-export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
 
 export ARCHFLAGS="-arch x86_64"
 export EDITOR="mate -w"
