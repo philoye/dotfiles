@@ -12,6 +12,9 @@ export LSCOLORS=gxFxCxDxBxegedabagacad
 # Window title
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}"; echo -ne "\007"'
 
+# fuck that you have new mail shit
+unset MAILCHECK
+
 #aliases
 alias ..="cd .."
 alias ...="cd ..; cd .."
@@ -42,9 +45,9 @@ then echo "\[\033[0;33m\]$(parse_git_branch)"; fi) \[\033[0;36m\]\$ \[\033[00m\]
 # Now you don't have to require 'rubygems'
 export RUBYOPT=rubygems
 
-# Source if the shell environment variables
+# Source the shell environment variables
 test -r ~/.shenv &&
-. ~/.shenv
+      . ~/.shenv
 
 # Ruby Version Manager
 if [[ -s /Users/philoye/.rvm/scripts/rvm ]] ; then source /Users/philoye/.rvm/scripts/rvm ; fi
