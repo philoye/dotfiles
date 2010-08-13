@@ -7,7 +7,7 @@ My lame dotfiles. If you're looking for good ideas, you should probably keep loo
 Installation
 ------------
 
-The idea is that there's a hidden directory called `.dotfiles` in home directory. All files of these files are then symlinked from your home directory using the supplied Rake task. That way your entire home directory isn't a git working tree.
+The idea is that there's a hidden directory called `.dotfiles` in home directory. All files in this directory are symlinked from your home directory using the supplied Rake task. That way your entire home directory isn't a git working tree.
 
 To install:
 
