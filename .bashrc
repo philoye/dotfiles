@@ -44,6 +44,9 @@ then echo "\[\033[0;33m\]$(parse_git_branch)"; fi) \[\033[0;36m\]\$ \[\033[00m\]
 # Now you don't have to require 'rubygems'
 export RUBYOPT=rubygems
 
+export GEM_HOME=/usr/local/bin
+
+
 # Source the shell environment variables
 test -r ~/.shenv &&
       . ~/.shenv
