@@ -27,7 +27,6 @@ alias c="clear"
 alias ra="touch tmp/restart.txt"
 alias gx="gitx --all"
 alias serve="python -m SimpleHTTPServer"
-alias gs="git st"
 alias pg="pg_ctl -D /usr/local/var/postgres"
 alias ss="script/server"
 

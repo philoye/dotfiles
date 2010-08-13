@@ -29,6 +29,6 @@
 [alias]
   co = checkout
   st = status
-  br = branch -a
+  br = branch
   ci = commit
   l = log --graph --date=rfc --decorate --pretty=format:' %Cgreencommit: %H%d%n by %an <%ae>, %ad (%ar)%n%n\"%s\"%n%n'
