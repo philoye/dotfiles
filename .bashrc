@@ -1,5 +1,8 @@
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
 
+# Android Tools on the Path:
+export PATH="/Applications/android-sdk/tools:$PATH"
+
 export ARCHFLAGS="-arch x86_64"
 export EDITOR="mate -w"
 export LC_CTYPE=en_US.UTF-8
