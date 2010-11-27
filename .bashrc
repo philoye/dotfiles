@@ -1,4 +1,4 @@
-export PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
+export PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/lib/node:$PATH"
 
 # Android Tools on the Path:
 export PATH="/Applications/android-sdk/tools:$PATH"
