@@ -50,6 +50,9 @@ set ttyfast
 set ruler
 set laststatus=2
 set relativenumber
+
+" Keep swap/undo in an out of the way place.
+" If you end your settings with double trailing // then vim will automatically use the full path to the file
 set undofile
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swp//
