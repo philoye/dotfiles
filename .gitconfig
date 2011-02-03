@@ -4,6 +4,8 @@
 [core]
   pager = less -FRSX
   whitespace = fix
+  quotepath = false
+  excludesfile = ~/.gitignore
 [diff]
   renamelimit = 0
   tool = changes
@@ -17,13 +19,13 @@
   ui = true
   pager = true
 [pack]
-	threads = 0
+  threads = 0
 [branch]
   autosetupmerge = true
 [gui]
-	recentrepo = /Users/philoye/Sites/oyemodern
+  recentrepo = /Users/philoye/Sites/oyemodern
 [push]
-	default = matching
+  default = matching
 [merge]
   log = true
 [alias]
