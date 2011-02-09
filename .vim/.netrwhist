@@ -1,8 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/philoye/Sites/oyemodern/api'
-let g:netrw_dirhist_2='/Users/philoye/Sites/oyemodern'
-let g:netrw_dirhist_3='/Users/philoye/Sites/oyemodern/includes'
-let g:netrw_dirhist_4='/Users/philoye/Sites/oyemodern'
-let g:netrw_dirhist_5='/Users/philoye/Sites/oyemodern/api'
-let g:netrw_dirhist_6='/Users/philoye/Sites/cubecart'
+let g:netrw_dirhist_cnt =0
