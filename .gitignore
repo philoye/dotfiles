@@ -4,5 +4,4 @@
 *.log
 *.tmproj
 .vim/.netrwhist
-.vim/bundle/**/doc/tags
 
