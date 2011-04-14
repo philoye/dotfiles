@@ -129,8 +129,10 @@ let mapleader = ","
 let NERDChristmasTree = 1
 let NERDTreeWinPos = "left"
 let NERDTreeShowFiles = 1
-let NERDTreeShowHidden = 1
 let NERDTreeChDirMode = 2
+let NERDTreeQuitOnOpen = 0
+let NERDTreeShowHidden = 1
+let NERDTreeShowLineNumbers = 0
 map <leader>n :NERDTreeToggle<cr>
 
 " Commenting {{{2
