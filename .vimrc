@@ -107,6 +107,12 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
+" navigate splits
+nmap <c-h> <c-w>h<c-w><bar>
+nmap <c-l> <c-w>l<c-w><bar>
+nmap <c-j> <C-w>j<C-w><bar>
+nmap <c-k> <C-w>k<C-w><bar>
+
 " long lines
 set wrap
 set textwidth=79
