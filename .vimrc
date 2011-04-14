@@ -1,11 +1,9 @@
-filetype off 
+filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 filetype plugin indent on
 
 set nocompatible      " We're running Vim, not Vi!
-
-" Security
 set modelines=0
 
 compiler ruby         " Enable compiler support for ruby
@@ -35,6 +33,9 @@ set cindent
 set copyindent
 set backspace=indent,eol,start
 
+" Command-T configuration
+let g:CommandTMaxHeight=20
+
 if has("autocmd")
   augroup vimrcEx
   au!
@@ -53,6 +54,15 @@ if has("autocmd")
 else
   set autoindent    " always set autoindenting on
 endif " has("autocmd")
+
+" this should strip trailing whitespace on save
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+autocmd BufWritePre *.* :call <SID>StripTrailingWhitespaces()
 
 set scrolloff=3
 set showmode
@@ -115,9 +125,9 @@ augroup myfiletypes
   " treat rackup files like ruby
   au BufRead,BufNewFile *.ru set ft=ruby
   au BufRead,BufNewFile Gemfile set ft=ruby
+  autocmd BufEnter *.haml setlocal cursorcolumn
   au BufRead,BufNewFile Capfile set ft=ruby
   au BufRead,BufNewFile Rakefile set ft=ruby
-  autocmd BufEnter *.haml setlocal cursorcolumn
   au BufRead,BufNewFile *.jss set ft=css
   au BufRead,BufNewFile *.less set ft=css
 augroup END
@@ -141,7 +151,7 @@ vmap <D-/> ,c<space>gv
 map <D-/> ,c<space>
 
 " Ack
-map <leader>f :Ack 
+map <leader>f :Ack
 
 " colorscheme Sunburst
 colorscheme vividchalk
@@ -172,7 +182,7 @@ nmap <D-[> <<
 nmap <D-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
-" quickly cycle windows 
+" quickly cycle windows
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
