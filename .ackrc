@@ -1,5 +1,8 @@
+--smart-case
+--count
 --type-set=sass=.sass
 --type-add=ruby=.haml
 --type-set=tmstuff=.tmproj,.tm_build_errors
+--type-set=coffee=.coffee
 --notmstuff
 
