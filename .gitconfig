@@ -16,12 +16,13 @@
   status = auto
   branch = auto
   interactive = auto
-  ui = true
+  ui = always
   pager = true
 [pack]
   threads = 0
 [branch]
   autosetupmerge = true
+  autosetuprebase = always
 [gui]
   recentrepo = /Users/philoye/Sites/oyemodern
 [push]
