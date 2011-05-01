@@ -6,6 +6,7 @@ export PATH="/Applications/android-sdk/tools:$PATH"
 export ARCHFLAGS="-arch x86_64"
 export EDITOR="mate -w"
 export LC_CTYPE=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Color is good
 # http://www.geekology.co.za/blog/2009/04/enabling-bash-terminal-directory-file-color-highlighting-mac-os-x/
