@@ -176,6 +176,8 @@ if has("autocmd")
   augroup END
 endif
 
+" Exit insert mode when you lose focus
+au FocusLost,TabLeave * call feedkeys("\<C-\>\<C-n>")
 " map jj to escape to get out of insert mode
 inoremap jj <ESC>
 " save pressing shift...
