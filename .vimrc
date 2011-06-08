@@ -157,10 +157,10 @@ let NERDTreeShowHidden = 1
 let NERDTreeShowLineNumbers = 0
 map <leader>n :NERDTreeToggle<cr>
 
-" Commenting {{{2
-" requires NERDCommenter plugin
+" Comment shortcuts, requires NERDCommenter plugin
 vmap <D-/> ,c<space>gv
 map <D-/> ,c<space>
+imap <D-/> <esc>,c<space>
 
 " Ack
 map <leader>f :Ack
