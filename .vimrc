@@ -134,10 +134,9 @@ set listchars=tab:▸\ ,eol:¬
 augroup myfiletypes
   " Clear old autocmds in group
   autocmd!
-  " treat rackup files like ruby
   au BufRead,BufNewFile *.ru set ft=ruby
   au BufRead,BufNewFile Gemfile set ft=ruby
-  autocmd BufEnter *.haml setlocal cursorcolumn
+  au BufRead,BufNewFile *.haml set ft=haml
   au BufRead,BufNewFile Capfile set ft=ruby
   au BufRead,BufNewFile Rakefile set ft=ruby
   au BufRead,BufNewFile *.jss set ft=css
