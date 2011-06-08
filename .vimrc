@@ -206,8 +206,12 @@ map <C-l> <C-w>l
 "if exists(":Tabularize")
   nmap <leader>a= :Tabularize /=<CR>
   vmap <leader>a= :Tabularize /=<CR>
-  nmap <leader>a: :Tabularize /:\zs<CR>
-  vmap <leader>a: :Tabularize /:\zs<CR>
+  "nmap <Leader>a: :Tabularize /:\zs<CR>
+  "vmap <Leader>a: :Tabularize /:\zs<CR>
+  nmap <Leader>a: :Tabularize /:\zs/l0l1<CR>
+  vmap <Leader>a: :Tabularize /:\zs/l0l1<CR>
+  nmap <leader>a> :Tabularize /=><CR>
+  vmap <leader>a> :Tabularize /=><CR>
 "endif
 
 " Set tabstop, softtabstop and shiftwidth to the same value {{{2
