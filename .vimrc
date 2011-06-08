@@ -55,12 +55,18 @@ else
   set autoindent    " always set autoindenting on
 endif " has("autocmd")
 
+let g:StripWhiteSpaceOnSave = 1
+autocmd BufRead,BufNewFile ~/Sites/oyemodern/* let g:StripWhiteSpaceOnSave=0
+autocmd BufRead,BufNewFile ~/Sites/oyemodern/api/* let g:StripWhiteSpaceOnSave=1
+
 " this should strip trailing whitespace on save
 fun! <SID>StripTrailingWhitespaces()
+  if g:StripWhiteSpaceOnSave==1
     let l = line(".")
     let c = col(".")
     %s/\s\+$//e
     call cursor(l, c)
+  endif
 endfun
 autocmd BufWritePre *.* :call <SID>StripTrailingWhitespaces()
 
