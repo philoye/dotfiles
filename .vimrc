@@ -164,8 +164,12 @@ imap <D-/> <esc>,c<space>
 " Ack
 map <leader>f :Ack
 
+" COLORS
+syntax enable
+set background=dark
 " colorscheme Sunburst
-colorscheme vividchalk
+"colorscheme vividchalk
+colorscheme solarized
 
 " Easily modify vimrc {{{1
 nmap <leader>v :e $MYVIMRC<CR>
