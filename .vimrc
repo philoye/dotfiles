@@ -83,19 +83,12 @@ set ruler
 set laststatus=2
 set relativenumber
 
-" Keep swap/undo in an out of the way place.
-set undofile
-if has("vms")
-  set nobackup    " do not keep a backup file, use versions instead
-else
-  set backup    " keep a backup file
-endif
-" Trail with trailing // then vim will automatically use the full path to the file. ',.' uses current directory if directory not created.
-set undodir=~/.vimtmp//,.
-set backupdir=~/.vimtmp//,.
-set directory=~/.vimtmp//,.
+" kill backups
+set nobackup
+"set nowritebackup
+set noswapfile
+set backupskip=/tmp/*,/private/tmp/*  "allows you to edit files in place, useful for crontab -e
 
-" folding settings
 set foldmethod=indent   "fold based on indent
 set foldnestmax=3       "deepest fold is 3 levels
 set nofoldenable        "dont fold by default
