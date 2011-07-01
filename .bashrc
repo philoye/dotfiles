@@ -4,7 +4,7 @@ export PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/
 export PATH="/Applications/android-sdk/tools:$PATH"
 
 export ARCHFLAGS="-arch x86_64"
-export EDITOR="mate -w"
+export EDITOR="mvim -f"
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
 
