@@ -35,6 +35,7 @@ alias serve="python -m SimpleHTTPServer"
 alias pg="pg_ctl -D /usr/local/var/postgres"
 alias ss="script/server"
 alias be="bundle exec"
+alias bake="bundle exec rake"
 alias ti="$HOME/Library/Application\ Support/Titanium/mobilesdk/osx/1.7.1/iphone/builder.py"
 
 # mvimf is a bash script: /Users/philoye/bin/mvim -f "$@"
