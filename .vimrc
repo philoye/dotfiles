@@ -113,12 +113,25 @@ nmap <c-j> <C-w>j<C-w><bar>
 nmap <c-k> <C-w>k<C-w><bar>
 
 " long lines
-set wrap
-set textwidth=79
-set formatoptions=qrn1
-set guioptions-=L
-set guioptions-=r
-set guioptions-=T
+"set wrap
+"set textwidth=79
+"set formatoptions=qrn1
+"set guioptions-=L
+"set guioptions-=r
+"set guioptions-=T
+"set wrap linebreak nolist
+"vmap <D-j> gj
+"vmap <D-k> gk
+"vmap <D-4> g$
+"vmap <D-6> g^
+"vmap <D-0> g^
+"nmap <D-j> gj
+"nmap <D-k> gk
+"nmap <D-4> g$
+"nmap <D-6> g^
+"nmap <D-0> g^
+
+"command! -nargs=* Wrap set wrap linebreak nolist
 
 " textmate-like invisible characters
 set list
