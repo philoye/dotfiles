@@ -35,8 +35,10 @@ alias serve="python -m SimpleHTTPServer"
 alias pg="pg_ctl -D /usr/local/var/postgres"
 alias ss="script/server"
 alias be="bundle exec"
-alias crone="EDITOR=/usr/local/bin/mvimf crontab -e"
 alias ti="$HOME/Library/Application\ Support/Titanium/mobilesdk/osx/1.7.1/iphone/builder.py"
+
+# mvimf is a bash script: /Users/philoye/bin/mvim -f "$@"
+alias crone="EDITOR=/usr/local/bin/mvimf crontab -e"
 
 # My hack of Lachlan's hacked together prompt from:
 # http://blogs.atlassian.com/developer/2009/03/gitting-dirty.html
