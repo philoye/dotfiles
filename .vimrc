@@ -33,6 +33,9 @@ set cindent
 set copyindent
 set backspace=indent,eol,start
 
+" :help should open a vsplit instead of a horizontal split
+au FileType help wincmd L
+
 " Command-T configuration
 let g:CommandTMaxHeight=20
 
