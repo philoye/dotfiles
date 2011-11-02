@@ -184,6 +184,9 @@ set background=dark
 " colorscheme Sunburst
 "colorscheme vividchalk
 colorscheme solarized
+" override status line
+hi StatusLine guifg=#CD5907 guibg=#ffffff
+"hi StatusLineNC guifg=#ffffff guibg=#0000ff
 
 " Easily modify vimrc {{{1
 nmap <leader>v :e $MYVIMRC<CR>
