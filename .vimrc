@@ -115,6 +115,10 @@ nmap <c-l> <c-w>l<c-w><bar>
 nmap <c-j> <C-w>j<C-w><bar>
 nmap <c-k> <C-w>k<C-w><bar>
 
+
+" open help in a vertical split
+au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
+
 " long lines
 "set wrap
 "set textwidth=79
