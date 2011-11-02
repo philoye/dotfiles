@@ -49,7 +49,7 @@ function parse_git_dirty {
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
-export PS1='\h \[\033[0;36m\]\w $(git branch &>/dev/null; if [ $? -eq 0 ]; 
+export PS1='\h \[\033[0;36m\]\w $(git branch &>/dev/null; if [ $? -eq 0 ];
 then echo "\[\033[0;33m\]$(parse_git_branch)"; fi) \[\033[0;36m\]\$ \[\033[00m\]'
 
 # Now you don't have to require 'rubygems'
