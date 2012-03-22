@@ -201,6 +201,8 @@ endif
 au FocusLost,TabLeave * call feedkeys("\<C-\>\<C-n>")
 " map jj to escape to get out of insert mode
 inoremap jj <ESC>
+" Disable going to Ex mode
+map Q <ESC>
 " save pressing shift...
 nnoremap ; :
 " Bubble single lines
