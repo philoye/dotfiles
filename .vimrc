@@ -149,10 +149,10 @@ augroup myfiletypes
   autocmd!
   au BufRead,BufNewFile *.ru set ft=ruby
   au BufRead,BufNewFile Gemfile set ft=ruby
-  au BufRead,BufNewFile *.haml set ft=haml
   au BufRead,BufNewFile Capfile set ft=ruby
   au BufRead,BufNewFile Rakefile set ft=ruby
   au BufRead,BufNewFile Guardfile set ft=ruby
+  au BufRead,BufNewFile *.haml set ft=haml
   au BufRead,BufNewFile *.jss set ft=css
   au BufRead,BufNewFile *.less set ft=css
 augroup END
