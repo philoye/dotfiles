@@ -88,6 +88,7 @@ else
   " hi StatusLine guifg=#CD5907 guibg=#ffffff
 endif
 colorscheme jellybeans
+set t_Co=256
 
 " CUSTOM STATUS LINE
 "-------------------------------------------------
