@@ -4,9 +4,6 @@
 [submodule ".vim/bundle/ack.vim"]
   path = .vim/bundle/ack.vim
   url = https://github.com/mileszs/ack.vim.git
-[submodule ".vim/bundle/command-t"]
-  path = .vim/bundle/command-t
-  url = https://github.com/wincent/Command-T.git
 [submodule ".vim/bundle/nerdcommenter"]
   path = .vim/bundle/nerdcommenter
   url = https://github.com/scrooloose/nerdcommenter.git
@@ -60,9 +57,6 @@
 [submodule ".vim/bundle/vim-repeat"]
   path = .vim/bundle/vim-repeat
   url = git://github.com/tpope/vim-repeat.git
-[submodule ".vim/bundle/vim-ruby-sinatra"]
-  path = .vim/bundle/vim-ruby-sinatra
-  url = git://github.com/hallison/vim-ruby-sinatra.git
 [submodule ".vim/bundle/vim-supertab"]
   path = .vim/bundle/vim-supertab
   url = git://github.com/tsaleh/vim-supertab.git
@@ -83,3 +77,6 @@
 [submodule ".vim/bundle/vim-stylus"]
 	path = .vim/bundle/vim-stylus
 	url = https://github.com/wavded/vim-stylus.git
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = git://github.com/kien/ctrlp.vim.git
