@@ -83,6 +83,9 @@ set ruler
 set laststatus=2
 set relativenumber
 
+" ignore cruft
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " MacOSX/Linux
+
 " kill backups
 set nobackup
 "set nowritebackup
@@ -145,11 +148,13 @@ augroup myfiletypes
   " Clear old autocmds in group
   autocmd!
   au BufRead,BufNewFile *.ru set ft=ruby
+  au BufRead,BufNewFile *.rb set ft=ruby
   au BufRead,BufNewFile Gemfile set ft=ruby
   au BufRead,BufNewFile Capfile set ft=ruby
   au BufRead,BufNewFile Rakefile set ft=ruby
   au BufRead,BufNewFile Guardfile set ft=ruby
   au BufRead,BufNewFile *.haml set ft=haml
+  au BufRead,BufNewFile *.hamlc set ft=haml
   au BufRead,BufNewFile *.jss set ft=css
   au BufRead,BufNewFile *.less set ft=css
 augroup END
