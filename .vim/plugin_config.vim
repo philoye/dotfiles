@@ -1,20 +1,20 @@
 " NERDTree
 "-------------------------------------------------
-let g:NERDTreeShowLineNumbers = 1
 let g:NERDTreeHijackNetrw     = 0
 let g:loaded_netrw            = 1        " Disable netrw
 let g:loaded_netrwPlugin      = 1        " Disable netrw
 let g:NERDTreeMinimalUI       = 1
 let g:NERDTreeDirArrows       = 1
-let g:NERDTreeWinSize         = 51
+let g:NERDTreeWinSize         = 41
 let g:NERDTreeWinPos          = 'left'
 let NERDTreeShowHidden        = 1
-let NERDChristmasTree         = 1
 let NERDTreeShowFiles         = 1
-"let NERDTreeChDirMode         = 2
 let NERDTreeQuitOnOpen        = 0
-let NERDTreeShowLineNumbers   = 0
 
+
+" NERD-TREE-TABS
+"-------------------------------------------------
+let g:nerdtree_tabs_open_on_gui_startup = 1    " Auto open nerd tree on startup
 
 " SYNTASTIC
 "-------------------------------------------------
