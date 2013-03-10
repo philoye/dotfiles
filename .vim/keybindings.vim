@@ -20,7 +20,7 @@ map <leader>N :NERDTreeFind<CR>
 
 " BUFFER NAVIGATION
 "-------------------------------------------------
-" map <leader>, <C-^>
+map <leader>, <C-^>
 map <leader>] :bnext<CR>
 map <leader>[ :bprev<CR>
 map <leader>ls :buffers<CR>

@@ -13,16 +13,3 @@ if has("gui_macvim")
   colorscheme solarized
 endif
 
-" VIMENTER
-"-------------------------------------------------
-" if isdirectory(argv(0))
-"   au VimEnter * :NERDTreeToggle
-"   au VimEnter * :wincmd p
-" endif
-
-" Colour columns
-" hi ColorColumn guibg=#222222
-
-" ???
-set go-=T
-
