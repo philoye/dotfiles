@@ -19,6 +19,7 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'jistr/vim-nerdtree-tabs'
 
 Bundle 'altercation/vim-colors-solarized'
 
