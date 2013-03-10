@@ -10,6 +10,5 @@ end
 "-------------------------------------------------
 if has("gui_macvim")
   source $HOME/.vim/gui_macvim.vim
-  colorscheme solarized
 endif
 

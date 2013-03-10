@@ -82,11 +82,11 @@ set smartcase                              " Switch to case sensitive mode if ne
 " DEFAULT COLOURS/FONTS FOR VIM - GVIMRC OVERRIDES THIS
 "-------------------------------------------------
 set background=dark
-colorscheme desert
 hi StatusLine guifg=#CD5907 guibg=#ffffff
 if has("gui_running")
   set guifont=Menlo:h11
 endif
+colorscheme jellybeans
 
 " CUSTOM STATUS LINE
 "-------------------------------------------------

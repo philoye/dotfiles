@@ -23,6 +23,7 @@ Bundle 'jistr/vim-nerdtree-tabs'
 
 Bundle 'fugalh/desert.vim'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'nanotech/jellybeans.vim'
 
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-haml'
