@@ -16,9 +16,15 @@ au BufRead,BufNewFile {*.vim}                                                set
 
 " AUTO RE-SOURCE VIMRC
 "-------------------------------------------------
-autocmd! bufwritepost $HOME/.vimrc source $MYVIMRC
-autocmd! bufwritepost $HOME/.vim/*.vim  source $MYVIMRC
-
+" fun! SourceConfig()
+  " source $MYVIMRC
+  " if has("gui_running")
+    " source $MYGVIMRC
+    " doautocmd ColorScheme .vimrc
+ " endif
+" endfun
+" autocmd BufWritePost *.vim   :call SourceConfig()
+" autocmd BufWritePost .vimrc  :call SourceConfig()
 
 " STRIP WHITESPACE ON SAVE
 "-------------------------------------------------
