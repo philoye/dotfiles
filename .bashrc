@@ -11,7 +11,7 @@ export LANG=en_US.UTF-8
 # Color is good
 # http://www.geekology.co.za/blog/2009/04/enabling-bash-terminal-directory-file-color-highlighting-mac-os-x/
 export CLICOLOR=1
-export LSCOLORS=gxFxCxDxBxegedabagacad
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 # Window title
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}"; echo -ne "\007"'
@@ -22,9 +22,9 @@ unset MAILCHECK
 #aliases
 alias ..="cd .."
 alias ...="cd ..; cd .."
-alias l="ls -l"
-alias la="ls -a"
-alias ll="ls -la"
+alias l="ls -lpF"
+alias la="ls -apF"
+alias ll="ls -lapFh"
 alias bb="bbedit"
 alias m="mate"
 alias v="mvim"
