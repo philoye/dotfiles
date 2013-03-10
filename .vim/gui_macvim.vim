@@ -1,4 +1,5 @@
 set guifont=Menlo\ Regular\ for\ Powerline:h11
+colorscheme solarized
 
 " FULLSCREEN
 "-------------------------------------------------
