@@ -18,6 +18,7 @@ set linespace=3                            " Spacing between lines
 set t_Co=256                               " Support for xterm with 256 colors (gets overriden in .gvimrc)
 set cursorline                             " Highlight the current line
 set gcr=n:blinkon0                         " Turn off blinking cursor
+set spell
 
 " INDENTATION
 "-------------------------------------------------
