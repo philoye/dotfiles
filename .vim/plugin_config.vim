@@ -34,13 +34,6 @@ let g:indent_guides_enable_on_vim_startup = 1
 "-------------------------------------------------
 let g:NERDSpaceDelims=1
 
-" QUICKFIXSIGNS
-"-------------------------------------------------
-"let g:quickfixsigns_classes = ['vcsdiff']
-
-" Move rooter out of the way to make way for tcomment
-"noremap <Leader>ro <Plug>RooterChangeToRootDirectory
-
 " CONTROL-P
 "-------------------------------------------------
 let g:ctrlp_clear_cache_on_exit   = 1
