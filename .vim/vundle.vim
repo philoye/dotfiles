@@ -20,6 +20,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'tpope/vim-repeat'
 
 Bundle 'fugalh/desert.vim'
 Bundle 'altercation/vim-colors-solarized'
