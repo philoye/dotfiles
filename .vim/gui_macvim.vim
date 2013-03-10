@@ -8,7 +8,7 @@ set columns=300
 
 " TRANSPARENCY
 "-------------------------------------------------
-set transparency=1
+set transparency=5
 
 " HIDE TOOLBAR
 "-------------------------------------------------
