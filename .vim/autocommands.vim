@@ -1,9 +1,9 @@
 " FILETYPES
 "-------------------------------------------------
 autocmd FileType ruby,rails,haml,eruby,yaml,ru,cucumber set ai sw=2 sts=2 et
-if has("gui_running")
-  autocmd FileType ruby,rails,haml,eruby,yaml,ru,cucumber :SyntasticEnable
-endif
+" if has("gui_running")
+  " autocmd FileType ruby,rails,haml,eruby,yaml,ru,cucumber :SyntasticEnable
+" endif
 
 " FILE TYPES
 "-------------------------------------------------
