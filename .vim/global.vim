@@ -53,9 +53,9 @@ set matchtime=2                            " (for only .2 seconds).
 " BACKUPS
 "-------------------------------------------------
 set nobackup                               " Kill backups
+set nowritebackup                          " No backup file while editing
 set noswapfile                             " Disable creation of *.swp files
-set backupskip=/tmp/*,/private/tmp/*       "allows you to edit files in place, useful for crontab -e
-"set nowritebackup
+set backupskip=/tmp/*,/private/tmp/*       " allows you to edit files in place, useful for crontab -e
 
 " PERSISTENT UNDO
 "-------------------------------------------------
