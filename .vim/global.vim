@@ -18,7 +18,7 @@ set linespace=3                            " Spacing between lines
 set t_Co=256                               " Support for xterm with 256 colors (gets overriden in .gvimrc)
 set cursorline                             " Highlight the current line
 set gcr=n:blinkon0                         " Turn off blinking cursor
-set spell
+set spell                                  " Spell checking
 
 " INDENTATION
 "-------------------------------------------------
@@ -55,7 +55,7 @@ set matchtime=2                            " (for only .2 seconds).
 set nobackup                               " Kill backups
 set nowritebackup                          " No backup file while editing
 set noswapfile                             " Disable creation of *.swp files
-set backupskip=/tmp/*,/private/tmp/*       " allows you to edit files in place, useful for crontab -e
+set backupskip=/tmp/*,/private/tmp/*       " Allows you to edit files in place, useful for crontab -e
 
 " PERSISTENT UNDO
 "-------------------------------------------------
@@ -103,7 +103,6 @@ au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
 "-------------------------------------------------
 au FocusLost * :silent! wall                            " Save when window loses focus
 au FocusLost,TabLeave * call feedkeys("\<C-\>\<C-n>")   " Exit insert mode when you lose focus
-
 
 " ignore cruft on OSX/Linux
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
