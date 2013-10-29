@@ -60,8 +60,8 @@ set backupskip=/tmp/*,/private/tmp/*       " Allows you to edit files in place, 
 
 " PERSISTENT UNDO
 "-------------------------------------------------
-"set undodir=$HOME/.vim/undodir
 set undofile
+set undodir=$HOME/.vim/undodir
 set undolevels=1000
 set undoreload=10000
 
