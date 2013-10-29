@@ -47,3 +47,7 @@ let g:ctrlp_custom_ignore         = {
   \ }
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files --exclude-standard']
 
+" VIM-MARKDOWN
+"-------------------------------------------------
+let g:vim_markdown_folding_disabled=1      " vim-markdown folds by default. WTF?
+
