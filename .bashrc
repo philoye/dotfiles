@@ -47,7 +47,7 @@ alias crone="EDITOR=/usr/local/bin/mvimf crontab -e"
 # My hack of Lachlan's hacked together prompt from:
 # http://blogs.atlassian.com/developer/2009/03/gitting-dirty.html
 function parse_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "[*]"
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "[*]"
 }
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
