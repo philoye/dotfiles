@@ -39,6 +39,7 @@ alias ti="$HOME/Library/Application\ Support/Titanium/mobilesdk/osx/1.7.1/iphone
 alias rails="bundle exec rails"
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+alias fixairplay="sudo pkill coreaudiod"
 
 # mvimf is a bash script: /Users/philoye/bin/mvim -f "$@"
 alias crone="EDITOR=/usr/local/bin/mvimf crontab -e"
