@@ -19,6 +19,7 @@ set t_Co=256                               " Support for xterm with 256 colors (
 set cursorline                             " Highlight the current line
 set gcr=n:blinkon0                         " Turn off blinking cursor
 set spell                                  " Spell checking
+set autoread                               " Auto refresh externally edited files
 
 " INDENTATION
 "-------------------------------------------------
