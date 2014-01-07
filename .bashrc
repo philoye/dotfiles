@@ -5,6 +5,7 @@ export PATH="/Applications/android-sdk/tools:$PATH"
 
 export ARCHFLAGS="-arch x86_64"
 export EDITOR="mvim -f"
+export VISUAL='mvim -f'
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
 
