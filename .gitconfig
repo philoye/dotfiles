@@ -35,3 +35,5 @@
   br = branch
   ci = commit
   l = log --graph --date=local --decorate --pretty=format:'%Cred%h%d%Creset%C(white) by %an, %ad (%ar)%n%s%n'
+[github]
+	user = philoye
