@@ -34,4 +34,4 @@
   st = status
   br = branch
   ci = commit
-  l = log --graph --date=local --decorate --pretty=format:'%Cgreen%h%d%Creset%C(white) by %an, %ad (%ar)%n%s%n'
+  l = log --graph --date=local --decorate --pretty=format:'%Cred%h%d%Creset%C(white) by %an, %ad (%ar)%n%s%n'
