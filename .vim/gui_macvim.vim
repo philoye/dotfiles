@@ -1,4 +1,4 @@
-set guifont=Menlo\ Regular\ for\ Powerline:h11
+set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h11
 colorscheme solarized
 
 " FULLSCREEN
