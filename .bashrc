@@ -63,7 +63,8 @@ then echo "\[\033[0;33m\]$(parse_git_branch)"; fi) \[\033[0;36m\]\$ \[\033[00m\]
 test -r ~/.shenv &&
       . ~/.shenv
 
-# Ruby Version Manager
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+# chruby
+RUBIES=(/Users/philoye/.rubies/rub*)
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
