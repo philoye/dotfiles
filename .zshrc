@@ -51,6 +51,7 @@ export EDITOR="mvim -f"
 export VISUAL='mvim -f'
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
+export BUNDLE_JOBS=3 # number of cores minus 1
 
 # Source the shell environment variables
 test -r ~/.shenv &&
