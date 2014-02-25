@@ -95,8 +95,8 @@ alias be='bundle exec'
 
 # chruby
 RUBIES=(/Users/philoye/.rubies/rub*)
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
 
 PROMPT='%{$fg_bold[green]%}%~ %{$fg_bold[cyan]%}$(git_prompt_info) %{$fg_bold[cyan]%} ➔ %{$reset_color%}'
 RPROMPT='%{$fg_bold[red]%}`ruby -e "puts \"ruby-#{RUBY_VERSION}-p#{RUBY_PATCHLEVEL}\""`%{$reset_color%}'
