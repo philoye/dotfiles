@@ -67,13 +67,16 @@ alias ...="cd ..; cd .."
 alias l="ls -lpF"
 alias la="ls -apF"
 alias ll="ls -lApFh"
-alias c="cd ~/Dropbox/code"
 
 alias pubkey="cat ~/.ssh/*.pub |pbcopy && echo 'Keys copied to clipboard'"
 alias pg="pg_ctl -D /usr/local/var/postgres"
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias fixairplay="sudo pkill coreaudiod"
+
+# shortcut to code directories, with tab-complete
+c() { cd ~/Dropbox/code/$1; }
+compctl -W ~/Dropbox/code/ -/ c
 
 # start a webserver
 serve() {
