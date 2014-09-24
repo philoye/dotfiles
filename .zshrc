@@ -97,7 +97,7 @@ alias gx="gitx --all"
 alias be='bundle exec'
 
 # chruby
-RUBIES=(/Users/philoye/.rubies/rub*)
+RUBIES=(~/.rubies/rub*)
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
