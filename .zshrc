@@ -75,8 +75,12 @@ alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias fixairplay="sudo pkill coreaudiod"
 
 # shortcut to code directories, with tab-complete
-c() { cd ~/Dropbox/code/$1; }
-compctl -W ~/Dropbox/code/ -/ c
+c() { cd ~/Dropbox\ \(Personal\)/code/$1; }
+compctl -W ~/Dropbox\ \(Personal\)/code/ -/ c
+
+# shortcut to code directories, with tab-complete
+co() { cd ~/Code/$1; }
+compctl -W ~/Code/ -/ co
 
 # start a webserver
 serve() {
