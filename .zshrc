@@ -96,6 +96,7 @@ alias gco='git checkout'
 alias gb='git branch -a'
 alias gr='git reset --soft HEAD'
 alias gx="gitx --all"
+alias cg='cd $(git root)'
 
 # ruby/rails
 alias be='bundle exec'
