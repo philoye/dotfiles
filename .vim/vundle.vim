@@ -1,10 +1,20 @@
 filetype off
 
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+"
 set rtp+=~/.vim/bundle/vundle/
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-call vundle#rc()
+call vundle#begin()
 
+" let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
+
 Bundle 'mileszs/ack.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
@@ -33,4 +43,5 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'skammer/vim-css-color'
 Bundle 'plasticboy/vim-markdown'
 
-filetype plugin indent on
+call vundle#end()            " required
+filetype plugin indent on    " required
