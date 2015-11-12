@@ -4,4 +4,6 @@
 --type-set=tmstuff=.tmproj,.tm_build_errors
 --type-set=coffee=.coffee
 --notmstuff
-
+--ignore-dir=log
+--ignore-dir=tmp
+--ignore-dir=vendor
