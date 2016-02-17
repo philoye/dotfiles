@@ -46,6 +46,8 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
+export GOPATH=$HOME/Dropbox\ \(Personal\)/code/go
+export PATH=$PATH:$GOPATH/bin
 export ARCHFLAGS="-arch x86_64"
 export EDITOR="mvim -f"
 export VISUAL='mvim -f'
