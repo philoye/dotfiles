@@ -88,6 +88,17 @@ servephp() {
   php -S localhost:${1:-8000}
 }
 
+function syntaxhighlight() {
+  if [ -z "$1" ]
+    then
+      echo "Syntax highlights whatever is in the clipboard.\n"
+      echo "Usage: syntaxhighlight [language]"
+  else
+    pbpaste | highlight -O rtf --syntax $1 --font Menlo --style moria --font-size 18 | pbcopy
+    echo "Highlighted $1 copied to clipboard"
+  fi
+}
+
 # git
 alias gst='git status'
 alias gco='git checkout'
