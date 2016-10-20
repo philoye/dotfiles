@@ -46,8 +46,6 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
-export GOPATH=$HOME/Dropbox\ \(Personal\)/code/go
-export PATH=$PATH:$GOPATH/bin
 export ARCHFLAGS="-arch x86_64"
 export EDITOR="mvim -f"
 export VISUAL='mvim -f'
@@ -61,7 +59,7 @@ test -r ~/.shenv &&
 
 alias v='mvim '
 alias m='mate'
-alias config="v ~/.zshrc"
+alias zshconfig="v ~/.zshrc"
 alias reload='source ~/.zshrc'
 
 alias ..="cd .."
@@ -72,9 +70,11 @@ alias ll="ls -lApFh"
 
 alias pubkey="cat ~/.ssh/*.pub |pbcopy && echo 'Keys copied to clipboard'"
 alias pg="pg_ctl -D /usr/local/var/postgres"
-alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+alias pgstart="echo 'running \"brew services start postgresql\"' && brew services start postgresql"
+alias pgstop="echo 'running \"brew services stop postgresql\"' && brew services stop postgresql"
 alias fixairplay="sudo pkill coreaudiod"
+
+alias bs="bundle exec rerun --background --dir app,db,lib --pattern '{**/*.rb}' -- bundle exec sidekiq --verbose"
 
 # shortcut to code directories, with tab-complete
 c() { cd ~/Dropbox/code/$1; }
@@ -113,6 +113,9 @@ alias be='bundle exec'
 RUBIES=(/Users/philoye/.rubies/rub*)
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
+if [[ -f ~/.ruby-version ]]; then
+  chruby $(cat ~/.ruby-version)
+fi
 
 PROMPT='%{$fg_bold[green]%}%~ %{$fg_bold[cyan]%}$(git_prompt_info) %{$fg_bold[cyan]%} ➔ %{$reset_color%}'
 RPROMPT='%{$fg_bold[red]%}`ruby -e "puts \"ruby-#{RUBY_VERSION}-p#{RUBY_PATCHLEVEL}\""`%{$reset_color%}'
@@ -124,3 +127,4 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}] ✓"
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
 
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

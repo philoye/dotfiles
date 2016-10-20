@@ -36,7 +36,7 @@ set guioptions-=L
 " imap <D-f> <Esc>:Ack<Space>
 
 " Share clipboard with OS X
-set clipboard=unnamed
+" set clipboard=unnamed
 
 menu File.Close\ Instance :qa<CR>
 inoremenu File.Close\ Instance :qa<CR>
