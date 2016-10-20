@@ -7,12 +7,13 @@ autocmd FileType ruby,rails,haml,eruby,yaml,ru,cucumber set ai sw=2 sts=2 et
 
 " FILE TYPES
 "-------------------------------------------------
-au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,Guardfile,*.rake,config.ru}   set ft=ruby
+au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,Guardfile,*.rake,config.ru}  set ft=ruby
 au BufRead,BufNewFile {*.md,*.mkd,*.markdown}                                set ft=markdown wrap
 au BufRead,BufNewFile {*.haml,*.hamlc}                                       set ft=haml
 au BufRead,BufNewFile {*.scss,*.less}                                        set ft=css
 au BufRead,BufNewFile {COMMIT_EDITMSG}                                       set ft=gitcommit
 au BufRead,BufNewFile {*.vim}                                                set ft=vim
+au BufRead,BufNewFile *.es6                                                  set ft=javascript
 
 " AUTO RE-SOURCE VIMRC
 "-------------------------------------------------
