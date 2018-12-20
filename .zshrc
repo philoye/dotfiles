@@ -77,8 +77,12 @@ alias fixairplay="sudo pkill coreaudiod"
 alias bs="bundle exec rerun --background --dir app,db,lib --pattern '{**/*.rb}' -- bundle exec sidekiq --verbose"
 
 # shortcut to code directories, with tab-complete
-c() { cd ~/Dropbox/code/$1; }
-compctl -W ~/Dropbox/code/ -/ c
+c() { cd ~/Dropbox\ \(Personal\)/code/$1; }
+compctl -W ~/Dropbox\ \(Personal\)/code/ -/ c
+
+# shortcut to code directories, with tab-complete
+co() { cd ~/Code/$1; }
+compctl -W ~/Code/ -/ co
 
 # start a webserver
 serve() {
@@ -105,12 +109,13 @@ alias gco='git checkout'
 alias gb='git branch -a'
 alias gr='git reset --soft HEAD'
 alias gx="gitx --all"
+alias cg='cd $(git root)'
 
 # ruby/rails
 alias be='bundle exec'
 
 # chruby
-RUBIES=(/Users/philoye/.rubies/rub*)
+RUBIES=(~/.rubies/rub*)
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 if [[ -f ~/.ruby-version ]]; then
